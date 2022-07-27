@@ -36,7 +36,25 @@ void selection_sort(int a[], int n)
 
         int temp = a[i];
         a[i] = a[min_ind];
-        a[min_ind] = a[temp];
+        a[min_ind] = temp;
+    }
+}
+void bubble_sort(int a[], int n)
+{
+
+    for (int i = 0; i < n - 1; i++)
+    {
+
+        for (int j = 0; j < n - i - 1; j++)
+        {
+
+            if (a[j] > a[j + 1])
+            {
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
     }
 }
 int main()
@@ -69,6 +87,10 @@ int main()
             break;
         case 2:
             selection_sort(a, n);
+            break;
+
+        case 3:
+            bubble_sort(a, n);
             break;
         }
 
