@@ -1,3 +1,8 @@
+/*
+AUTHOR- PATEL MARTIN KAMALNAYAN
+ROLL NO -2101CS43
+
+*/
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
