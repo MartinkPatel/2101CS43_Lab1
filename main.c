@@ -19,7 +19,16 @@ void subtraction()
     scanf("%d", &b);
     printf("The subtraction of %d and %d is %d\n", a, b, a - b);
 }
-void division() {}
+void division()
+{
+    printf("Enter 1st number : ");
+    int a, b;
+    scanf("%d", &a);
+    printf("Enter 2nd number : ");
+    scanf("%d", &b);
+    double c = a / (b + 0.0);
+    printf("The division of %d by %d is %f\n", a, b, c);
+}
 void multiplication()
 {
     printf("Enter 1st number : ");
