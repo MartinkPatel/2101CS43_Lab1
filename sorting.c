@@ -22,7 +22,7 @@ void insertion_sort(int a[], int n)
         a[j + 1] = key;
     }
 }
-main()
+int main()
 {
     printf("Select a sorting technique: \n");
     printf("1.Insertion Sort\n");
@@ -40,7 +40,7 @@ main()
         scanf("%d", &n);
         int a[n];
         printf("Enter elements of array: ");
-        for (int i = 0; i < i; i++)
+        for (int i = 0; i < n; i++)
         {
             scanf("%d", &a[i]);
         }
@@ -55,7 +55,7 @@ main()
         printf("The array after sorting is: ");
         for (int i = 0; i < n; i++)
         {
-            printf("%d", a[i]);
+            printf("%d ", a[i]);
         }
 
         printf("\n");
