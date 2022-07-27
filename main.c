@@ -10,7 +10,15 @@ void addition()
     scanf("%d", &b);
     printf("The addition of %d and %d is %d\n", a, b, a + b);
 }
-void subtraction() {}
+void subtraction()
+{
+    printf("Enter 1st number : ");
+    int a, b;
+    scanf("%d", &a);
+    printf("Enter 2nd number : ");
+    scanf("%d", &b);
+    printf("The subtraction of %d and %d is %d\n", a, b, a - b);
+}
 void division() {}
 void multiplication() {}
 int main()
