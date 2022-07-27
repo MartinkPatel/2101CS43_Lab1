@@ -22,6 +22,23 @@ void insertion_sort(int a[], int n)
         a[j + 1] = key;
     }
 }
+void selection_sort(int a[], int n)
+{
+    int min_ind;
+    for (int i = 0; i < n - 1; i++)
+    {
+        min_ind = i;
+        for (int j = i + 1; j < n; j++)
+        {
+            if (a[j] < a[min_ind])
+                min_ind = j;
+        }
+
+        int temp = a[i];
+        a[i] = a[min_ind];
+        a[min_ind] = a[temp];
+    }
+}
 int main()
 {
     printf("Select a sorting technique: \n");
@@ -49,6 +66,9 @@ int main()
         {
         case 1:
             insertion_sort(a, n);
+            break;
+        case 2:
+            selection_sort(a, n);
             break;
         }
 
