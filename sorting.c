@@ -199,7 +199,7 @@ int main()
     }
     else
     {
-        printf("Enter Appropiate chocie.\n\n");
+        printf("Enter Appropiate choice.\n\n");
     }
     return 0;
 }
