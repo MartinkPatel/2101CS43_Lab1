@@ -6,7 +6,22 @@ ROLL NO -2101CS43
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-void insertion_sort(int a[], int n) {}
+void insertion_sort(int a[], int n)
+{
+
+    int key;
+    for (int i = 1; i < n; i++)
+    {
+        key = a[i];
+        int j = i - 1;
+        while (j >= 0 && a[j] > key)
+        {
+            a[j + 1] = a[j];
+            j--;
+        }
+        a[j + 1] = key;
+    }
+}
 main()
 {
     printf("Select a sorting technique: \n");
@@ -36,6 +51,14 @@ main()
             insertion_sort(a, n);
             break;
         }
+
+        printf("The array after sorting is: ");
+        for (int i = 0; i < n; i++)
+        {
+            printf("%d", a[i]);
+        }
+
+        printf("\n");
     }
     else
     {
